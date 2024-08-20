@@ -1,0 +1,14 @@
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\bin\Debug\net8.0\Semana1Resolucion.exe
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\bin\Debug\net8.0\Semana1Resolucion.deps.json
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\bin\Debug\net8.0\Semana1Resolucion.runtimeconfig.json
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\bin\Debug\net8.0\Semana1Resolucion.dll
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\bin\Debug\net8.0\Semana1Resolucion.pdb
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.AssemblyInfoInputs.cache
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.AssemblyInfo.cs
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.csproj.CoreCompileInputs.cache
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.dll
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\refint\Semana1Resolucion.dll
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.pdb
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\Semana1Resolucion.genruntimeconfig.cache
+C:\Users\JOSÉ\source\repos\Semana1Resolucion\Semana1Resolucion\obj\Debug\net8.0\ref\Semana1Resolucion.dll
