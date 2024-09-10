@@ -11,13 +11,13 @@ namespace U1_Resolucion_Problema_1._5.Servicios
 {
     abstract class ServicioAbstracto<Clase> :IServicio
     {
-        public void Consultar(string sp,string id)
+        public void Consultar(string sp,int id)
         {
-            AccesoDatos.ConsultarSP(sp, id);
+            AccesoDatos.ConsultarUnoSP(sp, id);
         }
 
 
-        public bool Eliminar(string sp,string id)
+        public bool Eliminar(string sp,int id)
         {
             List<SqlParameter> lista = new List<SqlParameter>();
             SqlParameter p = new SqlParameter();

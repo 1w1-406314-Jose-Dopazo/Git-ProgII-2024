@@ -10,30 +10,38 @@ namespace U1_Resolucion_Problema_1._5.Dominio.Clases
     {
         public int id;
         public DateTime fecha;
-        public FormaPago fp;
         public string nomCliente;
         public List<DetalleFactura> lstDetalles;
+        public TipoPago fp;
 
-        public Factura(int id,string fecha,FormaPago fp,string nomCliente,List<DetalleFactura> lstDetalles)
+        public Factura(int id,string fecha,TipoPago fp,string nomCliente,List<DetalleFactura> lstDetalles)
         {
             this.id = id;
             this.fecha = Convert.ToDateTime(fecha);
-            this.fp = fp;
             this.nomCliente = nomCliente;
             this.lstDetalles = lstDetalles;
+            this.fp = fp;
+        }
+        public Factura(string fecha, TipoPago fp, string nomCliente, List<DetalleFactura> lstDetalles)
+        {
+            id = 0;
+            this.fecha = Convert.ToDateTime(fecha);
+            this.nomCliente = nomCliente;
+            this.lstDetalles = lstDetalles;
+            this.fp = fp;
         }
         public Factura() 
         {
             id = 0;
             fecha = DateTime.Now;
-            fp = new FormaPago();
             nomCliente = string.Empty;
             lstDetalles = new List<DetalleFactura>();
+            fp = new TipoPago();
         }
 
         public override string ToString()
         {
-            return "id: "+id.ToString()+"fecha: "+fecha.ToString()+"forma pago: "+fp.nombre+"nombre cliente: "+nomCliente+"nro detalles: "+lstDetalles.Count().ToString();
+            return "\nID_Factura: " + id.ToString() + "\nFecha: " + fecha.ToString() + "\nNombre Cliente: " + nomCliente + "\nForma de Pago: " + fp.nombre.ToString();
         }
     }
 }

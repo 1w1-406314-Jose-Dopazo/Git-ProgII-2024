@@ -27,7 +27,7 @@ namespace U1_Resolucion_Problema_1._5.Dominio.Clases
 
         public override string ToString()
         {
-            return "id: "+id.ToString()+"nombre: "+nombre+"precio unitario: "+precioUnitario.ToString();
+            return "\nID: " + id.ToString()+ "\nNombre: " + nombre+ "\nPrecio Unitario: " + precioUnitario.ToString();
         }
     }
 }

@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\",
+  "WorkspaceRootPath": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\source\\repos\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\desktop\\repo\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\source\\repos\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\servicios\\facturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\servicios\\facturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\source\\repos\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\servicios\\servicioabstracto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\servicios\\servicioabstracto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\source\\repos\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\servicios\\detallefacturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\desktop\\repo\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\servicios\\detallefacturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\servicios\\detallefacturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\source\\repos\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\desktop\\repo\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\servicios\\facturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\servicios\\facturaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|c:\\users\\jos\u00E9\\desktop\\repo\\u1_resolucion_problema_1.5\\u1_resolucion_problema_1.5\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6650DDB7-30A1-468C-A99E-A16E175A2674}|U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj|solutionrelative:u1_resolucion_problema_1.5\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs*",
-              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs*",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswEcAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs",
+              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Datos\\AccesoDatos.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswCQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T01:32:50.598Z",
+              "WhenOpened": "2024-09-10T12:15:32.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServicioAbstracto.cs",
-              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\ServicioAbstracto.cs",
-              "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Servicios\\ServicioAbstracto.cs",
-              "ToolTip": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\ServicioAbstracto.cs",
-              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Servicios\\ServicioAbstracto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T00:40:56.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DetalleFacturaServicio.cs",
-              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
-              "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
-              "ToolTip": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
-              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T00:40:22.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FacturaServicio.cs",
-              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs",
               "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs",
-              "ToolTip": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs*",
-              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCsAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs",
+              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Servicios\\FacturaServicio.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwH0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T19:44:39.747Z",
+              "WhenOpened": "2024-09-10T04:28:35.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Program.cs",
-              "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Program.cs",
-              "ToolTip": "C:\\Users\\JOS\u00C9\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Program.cs",
-              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DetalleFacturaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
+              "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
+              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Servicios\\DetalleFacturaServicio.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T15:01:47.292Z"
+              "WhenOpened": "2024-09-10T04:25:51.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Program.cs",
+              "RelativeDocumentMoniker": "U1_Resolucion_Problema_1.5\\Program.cs",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\Program.cs",
+              "RelativeToolTip": "U1_Resolucion_Problema_1.5\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwFQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T18:19:03.964Z",
+              "EditorCaption": ""
             }
           ]
         }

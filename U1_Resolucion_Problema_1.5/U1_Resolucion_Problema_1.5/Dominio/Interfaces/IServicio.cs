@@ -8,10 +8,10 @@ namespace U1_Resolucion_Problema_1._5.Dominio.Interfaces
 {
     internal interface IServicio
     {
-        bool Eliminar(string sp,string id);
+        bool Eliminar(string sp,int id);
 
 
-        void Consultar(string sp,string id);
+        void Consultar(string sp,int id);
 
     }
 }

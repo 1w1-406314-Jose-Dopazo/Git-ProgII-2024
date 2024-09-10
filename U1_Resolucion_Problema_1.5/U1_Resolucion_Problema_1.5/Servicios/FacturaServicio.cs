@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,56 +13,120 @@ namespace U1_Resolucion_Problema_1._5.Servicios
 {
     internal class FacturaServicio : ServicioAbstracto<Factura>
     {
-      
-        public void AgregarDetalle(Factura f,DetalleFactura df)
+        DetalleFacturaServicio dfs = new DetalleFacturaServicio();
+        TipoPagoServicio tps = new TipoPagoServicio();
+        public void AgregarDetalle(Factura f, DetalleFactura df)
         {
-            f.lstDetalles.Add(df);
-        }
-        public override async bool Guardar(Factura f)
-        {
-            UnitOfWork uow = new UnitOfWork();
-            bool aux = false;
-            int detallesIncertados = 0;
-            DetalleFacturaServicio dfs = new DetalleFacturaServicio();
-            SqlParameter id = new SqlParameter();
-            SqlParameter fecha = new SqlParameter();
-            SqlParameter formaPago = new SqlParameter();
-            SqlParameter nomCliente = new SqlParameter();
-            id.Value = f.id;
-            id.ParameterName = "@id";
-            fecha.Value = f.fecha;
-            fecha.ParameterName = "@fecha";
-            formaPago.Value = f.fp.id;
-            formaPago.ParameterName = "@id_forma_pago";
-            nomCliente.Value = f.nomCliente;
-            nomCliente.ParameterName = "@nom_cliente";
-            List<SqlParameter> lstParam = new List<SqlParameter>();
-            lstParam.Add(id);
-            lstParam.Add(fecha);
-            lstParam.Add(formaPago);
-            lstParam.Add(nomCliente);
+            if (df.id == 0)
+            {
+                f.lstDetalles.Add(df);
+            }
+            else
+            {
+                Console.WriteLine("No se puede agregar detalles con ID existente");
+            }
             
-           if(AccesoDatos.EjecutarSP("SP_Guardar_Factura", lstParam) == true)
-            {
-                aux = true;
-                uow.GuardarCambios();
-                
-            }
+        }
+        public override bool Guardar(Factura f)
+            //region de guardado desplegable
+        #region Guardar
+        {
+
+            bool aux = false;
 
 
-            foreach (DetalleFactura df in f.lstDetalles) await AccesoDatos.EjecutarSP();
+            List<SqlParameter> lstParam = new List<SqlParameter>()
             {
-                
-                df.idFactura = f.id;
-               if(dfs.Guardar(df) == true)
+                new SqlParameter ("@fecha",f.fecha),
+                new SqlParameter ("@id_forma_pago",f.fp.id),
+                new SqlParameter ("@nom_cliente",f.nomCliente),
+                new SqlParameter ("@id_factura",f.id)
+            };
+            
+            SqlParameter nroFactura = new SqlParameter();
+            nroFactura.ParameterName = "@nro_factura";
+            nroFactura.Direction = System.Data.ParameterDirection.Output;
+            nroFactura.SqlDbType = SqlDbType.Int;
+            lstParam.Add(nroFactura);
+            
+            if (f.id == 0)
+            {
+                lstParam.RemoveAt(3);
+
+                aux = (AccesoDatos.ObtenerInstancia().Guardar("SP_Nueva_Factura", lstParam));
+
+                foreach (DetalleFactura df in f.lstDetalles)
                 {
-                    uow.GuardarCambios();
-                    Console.WriteLine("detalles incertados" + detallesIncertados++.ToString());
+
+                    List<SqlParameter> lst = new List<SqlParameter>()
+                    {
+                        new SqlParameter("@id_factura",Convert.ToInt32(nroFactura.Value)),
+                        new SqlParameter("@id_articulo", df.articulo.id),
+                        new SqlParameter("@cantidad", df.cantidad)
+                    };
+
+                        aux = AccesoDatos.ObtenerInstancia().Guardar("SP_Nuevo_Detalle", lst);
+
+
                 }
+            }
+            else
+            {
+                
+                aux = (AccesoDatos.ObtenerInstancia().Guardar("SP_Actualizar_Factura", lstParam));
+                
+                foreach (DetalleFactura df in f.lstDetalles)
+                {
+                    if (df.id > 0)
+                    {
+                        List<SqlParameter> lst = new List<SqlParameter>()
+                        {
+                            new SqlParameter("@id",df.id),
+                            new SqlParameter("@id_factura", f.id),
+                            new SqlParameter("@id_articulo", df.articulo.id),
+                            new SqlParameter("@cantidad", df.cantidad)
+                        };
+
+                        aux = AccesoDatos.ObtenerInstancia().Guardar("SP_Actualizar_Detalle", lst);
+                    }
+                    else
+                    {
+                        List<SqlParameter> lst = new List<SqlParameter>()
+                        {
+                            new SqlParameter("@id_factura", f.id),
+                            new SqlParameter("@id_articulo", df.articulo.id),
+                            new SqlParameter("@cantidad", df.cantidad)
+                        };
+
+                        aux = AccesoDatos.ObtenerInstancia().Guardar("SP_Nuevo_Detalle", lst);
+                    }
+                }
+
+
+
                 
             }
-            uow.Dispose();
-            return  aux;
+                return aux;
+
+        }
+        #endregion 
+
+        public List<Factura> ObtenerFacturas()
+        {
+            DataTable dt = AccesoDatos.ConsultarSP("SP_Obtener_Facturas");
+            List<Factura> lstFacturas = new List<Factura>();
+            
+            foreach (DataRow dr in dt.Rows)
+            {
+                Factura f = new Factura();
+                f.fp = tps.ObtenerTipoPagoPorID(Convert.ToInt32(dr["ID_Forma_Pago"].ToString()));
+                f.fecha = Convert.ToDateTime(dr["Fecha"].ToString());
+                f.nomCliente = dr["Nom_Cliente"].ToString();
+                f.id = Convert.ToInt32(dr["ID_Factura"].ToString());
+                f.lstDetalles = dfs.ObtenerDetallesPorFactura(f);
+                lstFacturas.Add(f);
+            }
+            return lstFacturas;
         }
     }
 }

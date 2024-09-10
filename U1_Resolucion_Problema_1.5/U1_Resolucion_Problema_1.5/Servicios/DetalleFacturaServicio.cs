@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,32 +12,22 @@ namespace U1_Resolucion_Problema_1._5.Servicios
 {
     internal class DetalleFacturaServicio : ServicioAbstracto<DetalleFactura>
     {
-        public override bool Guardar(DetalleFactura df)
+        ArticuloServicio artS = new ArticuloServicio();
+        public override bool Guardar(DetalleFactura c)
         {
-            bool resultado = false;
-            SqlTransaction t = null;
-            SqlParameter id = new SqlParameter();
-            SqlParameter articulo = new SqlParameter();
-            SqlParameter cantidad = new SqlParameter();
-            SqlParameter idFactura = new SqlParameter();
-            id.Value = df.id;
-            id.ParameterName = "@id";
-            articulo.Value = df.articulo.id;
-            articulo.ParameterName = "@id_articulo";
-            cantidad.Value = df.cantidad;
-            cantidad.ParameterName = "@cantidad";
-            idFactura.Value = df.idFactura;
-            idFactura.ParameterName = "@id_factura";
-            List<SqlParameter> lstParam = new List<SqlParameter>();
-            lstParam.Add(id);
-            lstParam.Add(articulo);
-            lstParam.Add(cantidad);
-            lstParam.Add(idFactura);
-            if (AccesoDatos.EjecutarSP("SP_Guardar_Detalle", lstParam) == true)
+            throw new NotImplementedException();
+        }
+        public List<DetalleFactura> ObtenerDetallesPorFactura(Factura f)
+        {
+            List<DetalleFactura> lista = new List<DetalleFactura>();
+            DataTable dt = AccesoDatos.ConsultarUnoSP("SP_Obtener_Detalles_Por_Factura", f.id);
+            foreach (DataRow dr in dt.Rows)
             {
-                resultado=true;
+              Articulo a =  artS.ObtenerArticuloPorID(Convert.ToInt32(dr["ID_Articulo"].ToString()));
+                DetalleFactura detalle = new DetalleFactura(Convert.ToInt32(dr["ID_Detalle_Factura"].ToString()), a, Convert.ToInt32(dr["Cantidad"].ToString()));
+                lista.Add(detalle);
             }
-            return resultado;
+            return lista;
         }
         
     }

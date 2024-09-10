@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOSÉ\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj",
+      "projectUniqueName": "C:\\Users\\JOSÉ\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj",
       "projectName": "U1_Resolucion_Problema_1.5",
-      "projectPath": "C:\\Users\\JOSÉ\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj",
+      "projectPath": "C:\\Users\\JOSÉ\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5.csproj",
       "packagesPath": "C:\\Users\\JOSÉ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOSÉ\\source\\repos\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\obj\\",
+      "outputPath": "C:\\Users\\JOSÉ\\Desktop\\repo\\U1_Resolucion_Problema_1.5\\U1_Resolucion_Problema_1.5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JOSÉ\\AppData\\Roaming\\NuGet\\NuGet.Config",

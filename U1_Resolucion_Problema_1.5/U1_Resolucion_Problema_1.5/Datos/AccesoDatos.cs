@@ -26,17 +26,30 @@ namespace U1_Resolucion_Problema_1._5.Datos
             cmd.Connection = con;
 
         }
-        public static DataTable ConsultarSP(string SP, string id)
+        public static DataTable ConsultarUnoSP(string SP, int id)
         {
             DataTable dt = new DataTable();
-            AccesoDatos acceso = ObtenerInstancia();
+            ObtenerInstancia();
             
-            acceso.con.Open();
-            acceso.cmd.CommandText = SP;
-            acceso.cmd.CommandType = CommandType.StoredProcedure;
-            acceso.cmd.Parameters.AddWithValue("@ID",id);
-            dt.Load(acceso.cmd.ExecuteReader());
-            acceso.con.Close();
+            _instancia.con.Open();
+            _instancia.cmd.CommandText = SP;
+            _instancia.cmd.CommandType = CommandType.StoredProcedure;
+            _instancia.cmd.Parameters.Clear();
+            _instancia.cmd.Parameters.AddWithValue("@ID",id);
+            dt.Load(_instancia.cmd.ExecuteReader());
+            _instancia.con.Close();
+            return dt;
+        }
+        public static DataTable ConsultarSP(string sp)
+        {
+            DataTable dt = new DataTable();
+            ObtenerInstancia();
+
+            _instancia.con.Open();
+            _instancia.cmd.CommandText = sp;
+            _instancia.cmd.CommandType = CommandType.StoredProcedure;
+            dt.Load(_instancia.cmd.ExecuteReader());
+            _instancia.con.Close();
             return dt;
         }
 
@@ -44,42 +57,59 @@ namespace U1_Resolucion_Problema_1._5.Datos
         public static bool EjecutarSP(string SP, List<SqlParameter> lstParam)
         {
             bool aux = false;
-            AccesoDatos a = ObtenerInstancia();
-            a.con.Open();
-            a.cmd.CommandText = SP;
-            a.cmd.CommandType = CommandType.StoredProcedure;
-            a.cmd.Parameters.Clear();
+            ObtenerInstancia();
+            _instancia.con.Open();
+            _instancia.cmd.CommandText = SP;
+            _instancia.cmd.CommandType = CommandType.StoredProcedure;
+            _instancia.cmd.Parameters.Clear();
             foreach (SqlParameter p in lstParam) 
             {
-                a.cmd.Parameters.Add(p);
+                _instancia.cmd.Parameters.Add(p);
             }
-            if (a.cmd.ExecuteNonQuery() > 1)
+            if (_instancia.cmd.ExecuteNonQuery() > 1)
             {
                 aux = true;
             }
-            a.con.Close();
+            _instancia.con.Close();
             return aux;
         }
-        public static bool GuardarMaestroDetalle(string SP, List<SqlParameter> lstParam,SqlTransaction t)
+        public bool Guardar(string SP, List<SqlParameter> lstParam)
         {
+            
+
+            
+            
             bool aux = false;
-            AccesoDatos a = ObtenerInstancia();
-            a.con.Open();
-            a.cmd.CommandText = SP;
-            a.cmd.CommandType = CommandType.StoredProcedure;
-            a.cmd.Parameters.Clear();
-            a.cmd.Transaction= t;
+            
+            con.Open();
+            SqlTransaction t = con.BeginTransaction();
+            cmd.CommandText = SP;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Clear();
+            cmd.Transaction = t;
             foreach (SqlParameter p in lstParam)
             {
-                a.cmd.Parameters.Add(p);
-            }
-            if (a.cmd.ExecuteNonQuery() > 1)
+                cmd.Parameters.Add(p);
+            };
+            try
             {
-                aux = true;
+
+                if (cmd.ExecuteNonQuery() > 1)
+                {
+                    aux = true;
+                }
+                t.Commit();
             }
-            a.con.Close();
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                t.Rollback();
+            }
+
+            con.Close();
             return aux;
         }
+        
 
         public static AccesoDatos ObtenerInstancia()
         {

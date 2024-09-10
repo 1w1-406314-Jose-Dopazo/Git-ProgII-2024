@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace U1_Resolucion_Problema_1._5.Dominio.Clases
 {
-    public class FormaPago
+    public class TipoPago
     {
         public int id;
         public string nombre;
 
-        public FormaPago(int id,string nom)
+        public TipoPago(int id,string nom)
         {
             this.id = id;
             nombre = nom;
         }
-        public FormaPago()
+        public TipoPago()
         {
             id = 0;
             nombre = string.Empty;
@@ -24,7 +24,7 @@ namespace U1_Resolucion_Problema_1._5.Dominio.Clases
 
         public override string ToString()
         {
-            return "id: "+id.ToString()+"tipo pago: "+nombre;
+            return "\nId: " + id.ToString()+ "\nTipo pago: " + nombre;
         }
     }
 }
