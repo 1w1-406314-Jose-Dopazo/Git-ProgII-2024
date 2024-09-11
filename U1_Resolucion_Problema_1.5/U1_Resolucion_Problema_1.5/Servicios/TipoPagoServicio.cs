@@ -48,5 +48,13 @@ namespace U1_Resolucion_Problema_1._5.Servicios
             }
             return lstTiposPagos;
         }
+
+        public bool Eliminar(int id)
+        {
+            List<SqlParameter> lstParam = new List<SqlParameter>();
+            SqlParameter param = new SqlParameter() { ParameterName = "@ID", Value = id };
+            lstParam.Add(param);
+            return AccesoDatos.EjecutarSP("SP_Eliminar_Tipo_Pago", lstParam);
+        }
     }
 }

@@ -13,10 +13,30 @@ namespace U1_Resolucion_Problema_1._5.Servicios
     internal class DetalleFacturaServicio : ServicioAbstracto<DetalleFactura>
     {
         ArticuloServicio artS = new ArticuloServicio();
+        public bool Guardar(DetalleFactura df,int idFactura)
+        {
+            List<SqlParameter> lstParam = new List<SqlParameter>();
+            SqlParameter idf = new SqlParameter() { ParameterName= "@ID_Factura",Value = idFactura };
+            SqlParameter art = new SqlParameter() {ParameterName="@ID_Articulo",Value =df.articulo.id};
+            SqlParameter cant = new SqlParameter() { ParameterName = "@Cantidad", Value = df.cantidad };
+            lstParam.Add(idf);
+            lstParam.Add(art);
+            lstParam.Add(cant);
+            return AccesoDatos.ObtenerInstancia().Guardar("SP_Guardar_Detalle", lstParam);
+        }
+
         public override bool Guardar(DetalleFactura c)
         {
             throw new NotImplementedException();
         }
+        public bool Eliminar(int id)
+        {
+            List<SqlParameter> lstParam = new List<SqlParameter>();
+            SqlParameter param = new SqlParameter() { ParameterName = "@ID", Value = id };
+            lstParam.Add(param);
+            return AccesoDatos.EjecutarSP("SP_Eliminar_Detalle", lstParam);
+        }
+
         public List<DetalleFactura> ObtenerDetallesPorFactura(Factura f)
         {
             List<DetalleFactura> lista = new List<DetalleFactura>();

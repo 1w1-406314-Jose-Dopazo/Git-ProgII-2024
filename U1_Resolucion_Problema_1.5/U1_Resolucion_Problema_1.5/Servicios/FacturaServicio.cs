@@ -128,5 +128,12 @@ namespace U1_Resolucion_Problema_1._5.Servicios
             }
             return lstFacturas;
         }
+        public bool Eliminar(int id)
+        {
+            List<SqlParameter> lstParam = new List<SqlParameter>();
+            SqlParameter param = new SqlParameter() { ParameterName = "@ID", Value = id };
+            lstParam.Add(param);
+            return AccesoDatos.EjecutarSP("SP_Eliminar_Factura", lstParam);
+        }
     }
 }
