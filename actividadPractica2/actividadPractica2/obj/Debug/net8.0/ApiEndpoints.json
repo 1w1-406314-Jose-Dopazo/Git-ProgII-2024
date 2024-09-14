@@ -1,0 +1,194 @@
+[
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "GetArticulo",
+    "RelativePath": "api/Articulo/Articulo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "DeleteArticulo",
+    "RelativePath": "api/Articulo/Articulo",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "CreateArticulo",
+    "RelativePath": "api/Articulo/Articulo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "precioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "UptdateArticulo",
+    "RelativePath": "api/Articulo/Articulo",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PrecioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "GetArticulos",
+    "RelativePath": "api/Articulo/Articulos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "DeleteArticulos",
+    "RelativePath": "api/Articulo/Articulos",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lst",
+        "Type": "System.Collections.Generic.List\u00601[[actividadPractica2.Models.Articulo, actividadPractica2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "Articulo1_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "CreateArticulos",
+    "RelativePath": "api/Articulo/Articulos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Articulo1_nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo1_precioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_precioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "actividadPractica2.Controllers.ArticuloController",
+    "Method": "UpdateArticulos",
+    "RelativePath": "api/Articulo/Articulos",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lstArt",
+        "Type": "System.Collections.Generic.List\u00601[[actividadPractica2.Models.Articulo, actividadPractica2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "Articulo1_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo1_Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo1_PrecioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Articulo2_PrecioUnitario",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

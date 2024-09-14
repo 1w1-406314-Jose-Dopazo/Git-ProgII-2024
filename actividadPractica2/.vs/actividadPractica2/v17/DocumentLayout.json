@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|c:\\users\\jos\u00E9\\desktop\\actividadpractica2\\actividadpractica2\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|solutionrelative:actividadpractica2\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|c:\\users\\jos\u00E9\\desktop\\actividadpractica2\\actividadpractica2\\data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|solutionrelative:actividadpractica2\\data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|c:\\users\\jos\u00E9\\desktop\\actividadpractica2\\actividadpractica2\\services\\aplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD32004-043A-41E0-B60B-761874CD0D2D}|actividadPractica2\\actividadPractica2.csproj|solutionrelative:actividadpractica2\\services\\aplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArticuloRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Data\\ArticuloRepository.cs",
+              "RelativeDocumentMoniker": "actividadPractica2\\Data\\ArticuloRepository.cs",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Data\\ArticuloRepository.cs",
+              "RelativeToolTip": "actividadPractica2\\Data\\ArticuloRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T20:46:07.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Services\\AplicationService.cs",
+              "RelativeDocumentMoniker": "actividadPractica2\\Services\\AplicationService.cs",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Services\\AplicationService.cs",
+              "RelativeToolTip": "actividadPractica2\\Services\\AplicationService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T20:45:42.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArticuloController.cs",
+              "DocumentMoniker": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Controllers\\ArticuloController.cs",
+              "RelativeDocumentMoniker": "actividadPractica2\\Controllers\\ArticuloController.cs",
+              "ToolTip": "C:\\Users\\JOS\u00C9\\Desktop\\actividadPractica2\\actividadPractica2\\Controllers\\ArticuloController.cs",
+              "RelativeToolTip": "actividadPractica2\\Controllers\\ArticuloController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAmwI0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T17:00:45.763Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
