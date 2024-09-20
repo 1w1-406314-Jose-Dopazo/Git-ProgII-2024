@@ -61,7 +61,7 @@ namespace actividadPractica2.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data Source=DESKTOP-2LUFI20;Initial Catalog=produccion;Integrated Security=True.
+        ///   Looks up a localized string similar to Data Source=DESKTOP-2LUFI20;Initial Catalog=406314;Integrated Security=True.
         /// </summary>
         internal static string conectionString {
             get {

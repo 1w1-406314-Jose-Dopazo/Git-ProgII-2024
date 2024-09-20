@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOSÉ\\Desktop\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj": {}
+    "C:\\Users\\JOSÉ\\Desktop\\repo\\Git-ProgII-2024\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOSÉ\\Desktop\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj": {
+    "C:\\Users\\JOSÉ\\Desktop\\repo\\Git-ProgII-2024\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOSÉ\\Desktop\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj",
+        "projectUniqueName": "C:\\Users\\JOSÉ\\Desktop\\repo\\Git-ProgII-2024\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj",
         "projectName": "actividadPractica2",
-        "projectPath": "C:\\Users\\JOSÉ\\Desktop\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj",
+        "projectPath": "C:\\Users\\JOSÉ\\Desktop\\repo\\Git-ProgII-2024\\actividadPractica2\\actividadPractica2\\actividadPractica2.csproj",
         "packagesPath": "C:\\Users\\JOSÉ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOSÉ\\Desktop\\actividadPractica2\\actividadPractica2\\obj\\",
+        "outputPath": "C:\\Users\\JOSÉ\\Desktop\\repo\\Git-ProgII-2024\\actividadPractica2\\actividadPractica2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOSÉ\\AppData\\Roaming\\NuGet\\NuGet.Config",

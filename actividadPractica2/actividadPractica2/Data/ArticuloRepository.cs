@@ -67,7 +67,8 @@ namespace actividadPractica2.Data
                 SqlParameter aName = new SqlParameter() { ParameterName = "@nombre", Value = articulo.nombre };
                 SqlParameter aPrecioU = new SqlParameter() { ParameterName = "@precio_unit", Value = articulo.precioUnitario };
                 List<SqlParameter> lstParam = new List<SqlParameter>() { aID, aName, aPrecioU };
-                result = DataHelper.GetInstance().ExecuteSP("SP_Guardar_Articulo",null, lstParam);
+                DataHelper.GetInstance().ExecuteSP("SP_Guardar_Articulo",null, lstParam);
+                result = true;
             }
             return result;
         }

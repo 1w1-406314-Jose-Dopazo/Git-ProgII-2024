@@ -211,12 +211,12 @@ as
 begin
 begin
 declare @max int
-select @max=max([Id_Articulo]) from [Articulos]
+select @max=max(ID_Articulo) from Articulos
 if @max IS NULL   
   SET @max = 0
-DBCC CHECKIDENT ([Articulos], RESEED, @max)
+DBCC CHECKIDENT (Articulos, RESEED, @max)
 end
-if exists (select ID_Articulo from Articulos where ID_Articulo = @id) update Articulos set Nombre=@nombre,Precio_Unitario=@precio_unit where ID_Articulo=@id
+if @id>0 and exists (select ID_Articulo from Articulos where ID_Articulo = @id) update Articulos set Nombre=@nombre,Precio_Unitario=@precio_unit where ID_Articulo=@id
 else Insert into Articulos (Nombre,Precio_Unitario) values (@nombre,@precio_unit)
 end
 GO
