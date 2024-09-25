@@ -1,0 +1,138 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "406314Context",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "actividadPractica2",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Articulos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Detalles_Facturas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Facturas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tipos_Pagos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SP_Actualizar_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Actualizar_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Eliminar_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Eliminar_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Eliminar_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Eliminar_Tipo_Pago]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Guardar_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Guardar_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Guardar_Forma_Pago]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Nueva_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Nuevo_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Detalles_Por_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Detalles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Facturas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Tipo_Pago]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Obtener_Tipos_Pagos]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
