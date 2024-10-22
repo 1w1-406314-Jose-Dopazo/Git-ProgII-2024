@@ -1,0 +1,26 @@
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1px;
+    padding-left: 20px;
+}
+.col
+{
+    flex-direction: row;
+    padding: 1em;
+    text-align: left;
+}
+.menu
+{
+    line-height: 0%;
+    background-color: rgba(51, 113, 174, 0.862);
+    width: 190px;
+    height: 500px;
+    border: 1px solid black;
+}
+ul
+{
+    list-style: none;
+}
